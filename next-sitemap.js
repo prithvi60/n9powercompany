@@ -1,5 +1,5 @@
 module.exports = {
-  siteUrl: 'https://startup-saas-modern.vercel.app',
+  siteUrl: '/',
   generateRobotsTxt: true,
   // optional
   // robotsTxtOptions: {

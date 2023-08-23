@@ -3,6 +3,8 @@ import { RiArrowRightSLine } from "react-icons/ri";
 import Masonry from "react-masonry-component";
 import SectionHeading from "components/section-heading";
 import GalleryCard from "components/cards/gallery-card";
+// import Masonry from "components/cards/masonry";
+
 
 import gallery1 from "assets/images/gallery/1.png";
 import gallery2 from "assets/images/gallery/2.png";
@@ -57,6 +59,7 @@ const Gallery = () => {
           slogan="Services"
           title="We offer a wide range of ship repairing services"
         />
+        {/* <Masonry items={data.image} /> */}
         <Box as={Masonry} options={masonryOptions} sx={styles.galleryWrapper}>
           {data?.map((item) => (
             <GalleryCard key={item.id} item={item} />
