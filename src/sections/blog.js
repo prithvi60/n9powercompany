@@ -1,6 +1,6 @@
 
 import { jsx, Box, Container, Button } from 'theme-ui';
-import Slider from 'react-slick';
+// import Slider from 'react-slick';
 import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
 import SectionHeading from 'components/section-heading';
 import BlogPost from 'components/cards/blog-card';
@@ -85,11 +85,11 @@ const Blog = () => {
           slogan="Blog Post"
           title="Popular blog post we update everyday"
         />
-        <Slider sx={styles.blogWrapper} {...settings}>
+        {/* <Slider sx={styles.blogWrapper} {...settings}>
           {data?.map((post) => (
             <BlogPost key={post.id} post={post} />
           ))}
-        </Slider>
+        </Slider> */}
       </Container>
     </Box>
   );

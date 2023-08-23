@@ -1,7 +1,7 @@
 import { jsx, Box, Container, MenuButton, Flex, Button } from 'theme-ui';
 import { useState } from 'react';
 import { GrClose } from 'react-icons/gr';
-import Sticky from 'react-stickynode';
+// import Sticky from 'react-stickynode';
 import Logo from 'components/logo';
 import { NavLink } from 'components/link';
 import menuItems from './header.data';
@@ -23,7 +23,7 @@ export default function Header() {
 
   return (
     <Box sx={styles.headerWrapper}>
-      <Sticky enabled={true} top={0} activeClass="is-sticky" innerZ={10}>
+      {/* <Sticky enabled={true} top={0} activeClass="is-sticky" innerZ={10}> */}
         <Box
           as="header"
           sx={styles.header}
@@ -71,7 +71,7 @@ export default function Header() {
             </Box>
           </Container>
         </Box>
-      </Sticky>
+      {/* </Sticky> */}
     </Box>
   );
 }

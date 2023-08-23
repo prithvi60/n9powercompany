@@ -1,6 +1,6 @@
 import { jsx, Box, Button, Container, Image } from "theme-ui";
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
-import Slider from "react-slick";
+// import Slider from "react-slick";
 import SectionHeading from "components/section-heading";
 import uber from "assets/images/clients/uber.png";
 import google from "assets/images/clients/google.png";
@@ -98,13 +98,13 @@ const Clients = () => {
           slogan="Meet Our Clients"
           title="Get to know  our reputed customers"
         />
-        <Slider sx={styles.clients} {...settings}>
+        {/* <Slider sx={styles.clients} {...settings}>
           {clients?.map((client) => (
             <Box key={client.id} as="figure" sx={styles.logo}>
               <Image loading="lazy" src={client.logo} alt={client.name} />
             </Box>
           ))}
-        </Slider>
+        </Slider> */}
       </Container>
     </Box>
   );
